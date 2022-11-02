@@ -36,6 +36,15 @@ public class RailFenceCipher extends TranspositionCipher {
     };
 
     public String decipher(String inputText) {
+    	String result = "";
+    	bIndex = new BouncingIndex(rails.length);
+    	char inputChar[] = new char[inputText.length()];
+        inputText.getChars(0, inputText.length(), inputChar, 0);
+        for (int idx = 0; idx < inputText.length(); idx++) {
+        	rails[bIndex.next()] += "*";
+        }
+    	
+    	
     	
         return inputText;
     };

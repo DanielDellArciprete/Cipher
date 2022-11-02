@@ -19,12 +19,12 @@ public class RailFenceCipherTest {
 
 	@Test
 	public void testEspacios() {
-		assertEquals("haao mlma", railFence.cipher("hola mama"));
+		assertEquals("h aoammla", railFence.cipher("hola mama"));
 	}
 
 	@Test
 	public void testSinEspacios() {
-		assertEquals("Aöéèüâ", railFence.cipher("Aéüöèâ"));
+		assertEquals("Aèéöâü", railFence.cipher("Aéüöèâ"));
 	}
 
 	@Test
