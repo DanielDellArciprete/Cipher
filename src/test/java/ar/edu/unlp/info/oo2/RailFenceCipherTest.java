@@ -42,6 +42,11 @@ public class RailFenceCipherTest {
 			railFence.cipher("tstestethezteztte");
 		});
 	}
+	
+	@Test
+	public void testEspaciosD(){
+		assertEquals("hola mama", railFence.decipher("h aoammla"));
+	}
 
 	//agarrar 3 o 4 rieles y agarrar un mensaje muuuy largo 
 	// @Test
